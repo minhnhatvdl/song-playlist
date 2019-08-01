@@ -1,5 +1,7 @@
 import React from "react";
 import ListSong from "../ListSong/ListSong";
+import SelectedSong from "../SelectedSong/SelectedSong";
+import "./App.css";
 
 class App extends React.Component {
   render() {
@@ -9,6 +11,9 @@ class App extends React.Component {
         <div className="ui grid">
           <div className="eight wide column">
             <ListSong />
+          </div>
+          <div className="eight wide column flexCenter">
+            <SelectedSong />
           </div>
         </div>
       </div>

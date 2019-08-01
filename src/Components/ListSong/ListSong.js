@@ -9,8 +9,8 @@ const ListSong = ({ listSong, getListSong }) => {
   }, [getListSong]);
   return (
     <div className="ui middle aligned divided list">
-      {listSong.map(({ title }) => (
-        <Song key={title} title={title} />
+      {listSong.map(song => (
+        <Song key={song.title} song={song} />
       ))}
     </div>
   );
